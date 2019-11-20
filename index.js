@@ -71,7 +71,6 @@ const jobFinder = listOfRequirements => {
 
   const findCompanies = jobBoard.map(company => {
     const { requirements } = company;
-
     const providedRequirement = listOfRequirements.join("|") + "|doesn't require anything";
 
     if (requirements.match(providedRequirement)) {
